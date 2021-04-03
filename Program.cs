@@ -15,6 +15,8 @@ namespace Chapter7_Arrays
                 Console.WriteLine("4"); // Ok
                 Console.WriteLine("5"); // Ok
                 Console.WriteLine("8"); // Ok
+                Console.WriteLine("10"); // Ok
+                Console.WriteLine("17 - link. No working!"); // No
                 Console.WriteLine("24"); // Ok
 
                 Console.WriteLine("----------");
@@ -82,11 +84,21 @@ namespace Chapter7_Arrays
                         ascendingNumber.Ascending(); 
                         Console.WriteLine();
                         Console.WriteLine("----------");
-
                         break;
                     case 8:
-                        Task_Sort numSort = new Task_Sort();
-                        Console.WriteLine(string.Join(" ", numSort.SortArray()));
+                        Task_Sort numSort_8 = new Task_Sort();
+                        Console.WriteLine(string.Join(" ", numSort_8.SortArray_8()));
+                        break;
+                    case 10:
+                        Number_Count numberCount = new Number_Count();
+                        numberCount.TheMostCommonElement();
+                        Console.WriteLine("----------");
+                        break;
+                    case 17:
+                        //Task_Sort numSort_17 = new Task_Sort();
+                        //  Console.WriteLine(string.Join(" ", numSort_17.SortArray_17()));
+                        // https://www.w3resource.com/csharp-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-7.php
+                        // https://www.geeksforgeeks.org/merge-sort/
                         break;
                     case 24:
 

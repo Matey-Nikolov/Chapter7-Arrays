@@ -8,21 +8,42 @@ namespace Chapter7_Arrays
 {
     class Task_Sort
     {
-        public int[] SortArray()
+        /*
+        public int[] SortArray_17()
         {
+            // Task 17.
+            //
+            //
+            Console.Write("Enter a numbers: ");
+            int[] numbers = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+        }
+        */
+
+
+        public int[] SortArray_8()
+        {
+            // Task 8.
+            //
+            //
             Console.Write("Enter a numbers: ");
             int[] numbers = Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
 
-            sort(numbers);
+            SelectionSort(numbers);
 
             return numbers;
         }
 
-        static void sort(int[] arr)
+        static void SelectionSort(int[] arr)
         {
+            // Task 8.
+            //
+            //
             int n = arr.Length;
 
             for (int i = 0; i < n - 1; i++)
